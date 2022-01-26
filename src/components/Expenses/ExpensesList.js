@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React from 'react';
 
 import './ExpensesList.css';
 
@@ -8,7 +8,7 @@ const ExpensesList = (props) => {
     
   let expenseContent = <p>No Expenses Found</p>;
   if(props.items.length === 0) {
-    return <h2 className="expenses-list__fallback">No Expenses Found</h2>    
+    return <h2 className="expenses-list__fallback">{expenseContent}</h2>;    
   }
 
   return (
